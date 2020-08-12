@@ -5,4 +5,5 @@ Hecho en KiCad
 
 COSAS POR HACER :
 
+- Asignar el footprint correspondiente a cada componente del esquemático
 - PCB
