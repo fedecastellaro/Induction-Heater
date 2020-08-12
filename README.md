@@ -5,5 +5,10 @@ Hecho en KiCad
 
 COSAS POR HACER :
 
-- Asignar el footprint correspondiente a cada componente del esquemático
-- PCB
+- Falta asignar footprint a:
+	- Capacitor de filtrado 2200uF ( tengo que fijarme cuál tengo )
+	- Capacitor de 100uF 
+	- Preset genérico ( No lo encuentro en kicad)
+	- Switch
+
+- Armar PCB
