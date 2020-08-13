@@ -255,26 +255,17 @@ Connection ~ 4100 5250
 $Comp
 L Diode:BA159 D4
 U 1 1 5F3006C3
-P 6000 3900
-F 0 "D4" H 6000 3683 50  0000 C CNN
-F 1 "BA159" H 6000 3774 50  0000 C CNN
-F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 6000 3725 50  0001 C CNN
-F 3 "http://diotec.com/tl_files/diotec/files/pdf/datasheets/ba157" H 6000 3900 50  0001 C CNN
-	1    6000 3900
+P 5850 3900
+F 0 "D4" H 5850 3683 50  0000 C CNN
+F 1 "BA159" H 5850 3774 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 5850 3725 50  0001 C CNN
+F 3 "http://diotec.com/tl_files/diotec/files/pdf/datasheets/ba157" H 5850 3900 50  0001 C CNN
+	1    5850 3900
 	-1   0    0    1   
 $EndComp
 Connection ~ 6300 4950
 Wire Wire Line
 	6300 4950 7250 4950
-Wire Wire Line
-	5500 4250 5500 3900
-Wire Wire Line
-	5500 3900 5850 3900
-Wire Wire Line
-	6150 3900 6300 3900
-Connection ~ 5500 3900
-Wire Wire Line
-	5500 3900 5500 3700
 $Comp
 L power:VCC #PWR0106
 U 1 1 5F30EA67
@@ -813,4 +804,20 @@ Selector de alimentación DC\n
 Connection ~ 6000 2700
 Wire Notes Line
 	1300 4600 3450 4600
+Wire Wire Line
+	5500 3700 5500 3900
+Wire Wire Line
+	5700 3900 5500 3900
+Connection ~ 5500 3900
+Wire Wire Line
+	5500 3900 5500 4250
+Wire Wire Line
+	6000 3900 6100 3900
+Wire Wire Line
+	6100 3900 6100 4450
+Wire Wire Line
+	5800 4450 6100 4450
+Connection ~ 6100 3900
+Wire Wire Line
+	6100 3900 6300 3900
 $EndSCHEMATC
