@@ -1,12 +1,14 @@
+# **INDUCTION HEATER**
+
 Circuito básico para el trabajo práctico obligatorio de la materia ELECTRONICA DE POTENCIA de 5to año UTN FRBA.
 
 Hecho en KiCad
 
 
-Estado del PCB:
+# Estado del PCB:
 	- TERMINADO.
 
-Observaciones:
+# Observaciones:
 
 	- "TPO_Potencia_V1": PCB con los transistores en bottom layer y en sentido horizontal, utilizando el cobre de la placa como disipador + punto 				     de contacto.
 	- "TPO_Potencia_V2": PCB con los transistores en top layer y de manera verticual
