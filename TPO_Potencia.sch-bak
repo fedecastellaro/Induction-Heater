@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Driver_FET:IR2153 U2
+L TPO_Potencia-rescue:IR2153-Driver_FET U2
 U 1 1 5F2B73B8
 P 5500 4750
 F 0 "U2" H 5500 5431 50  0000 C CNN
@@ -25,18 +25,7 @@ F 3 "https://www.infineon.com/dgdl/ir2153.pdf?fileId=5546d462533600a4015355c8c5f
 	1    0    0    -1  
 $EndComp
 $Comp
-L Diode_Bridge:RBV3500 D2
-U 1 1 5F2B72ED
-P 2950 2000
-F 0 "D2" H 2500 2150 50  0000 L CNN
-F 1 "RBV3500" H 2500 2250 50  0000 L CNN
-F 2 "Diode_THT:RBV25" H 2800 2550 50  0001 C CNN
-F 3 "" H 2800 2550 50  0001 C CNN
-	1    2950 2000
-	1    0    0    -1  
-$EndComp
-$Comp
-L Transistor_FET:STP12N50M2 U4
+L TPO_Potencia-rescue:STP12N50M2-Transistor_FET U4
 U 1 1 5F2BC5AE
 P 7950 5300
 F 0 "U4" H 8050 5550 50  0000 L CNN
@@ -47,7 +36,7 @@ F 3 "" H 7700 5750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Transistor_FET:STP12N50M2 U3
+L TPO_Potencia-rescue:STP12N50M2-Transistor_FET U3
 U 1 1 5F2BB9E2
 P 7950 4550
 F 0 "U3" H 8050 4850 50  0000 L CNN
@@ -58,7 +47,7 @@ F 3 "" H 7700 5000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Diode:1N47xxA D5
+L TPO_Potencia-rescue:1N47xxA-Diode D5
 U 1 1 5F2C0F84
 P 7250 4700
 F 0 "D5" V 7204 4780 50  0000 L CNN
@@ -69,7 +58,7 @@ F 3 "https://www.vishay.com/docs/85816/1n4728a.pdf" H 7250 4700 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Diode:1N47xxA D6
+L TPO_Potencia-rescue:1N47xxA-Diode D6
 U 1 1 5F2C398F
 P 7300 5450
 F 0 "D6" V 7254 5530 50  0000 L CNN
@@ -80,7 +69,7 @@ F 3 "https://www.vishay.com/docs/85816/1n4728a.pdf" H 7300 5450 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R4
+L TPO_Potencia-rescue:R-Device R4
 U 1 1 5F2C4F13
 P 6850 4550
 F 0 "R4" V 6643 4550 50  0000 C CNN
@@ -91,7 +80,7 @@ F 3 "~" H 6850 4550 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R5
+L TPO_Potencia-rescue:R-Device R5
 U 1 1 5F2C54BB
 P 6850 5300
 F 0 "R5" V 6643 5300 50  0000 C CNN
@@ -101,14 +90,8 @@ F 3 "~" H 6850 5300 50  0001 C CNN
 	1    6850 5300
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	7000 4550 7250 4550
-Connection ~ 7250 4550
-Wire Wire Line
-	7000 5300 7300 5300
-Connection ~ 7300 5300
 $Comp
-L power:GND #PWR0101
+L TPO_Potencia-rescue:GND-power #PWR0101
 U 1 1 5F2C9C3F
 P 7300 5750
 F 0 "#PWR0101" H 7300 5500 50  0001 C CNN
@@ -119,7 +102,7 @@ F 3 "" H 7300 5750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0102
+L TPO_Potencia-rescue:GND-power #PWR0102
 U 1 1 5F2CA0BF
 P 8000 5750
 F 0 "#PWR0102" H 8000 5500 50  0001 C CNN
@@ -130,7 +113,7 @@ F 3 "" H 8000 5750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0103
+L TPO_Potencia-rescue:GND-power #PWR0103
 U 1 1 5F2CA303
 P 5500 5750
 F 0 "#PWR0103" H 5500 5500 50  0001 C CNN
@@ -160,7 +143,7 @@ Wire Wire Line
 Wire Wire Line
 	5800 4950 6300 4950
 $Comp
-L Connector:Screw_Terminal_01x02 J1
+L TPO_Potencia-rescue:Screw_Terminal_01x02-Connector J1
 U 1 1 5F2D97DD
 P 1700 2050
 F 0 "J1" H 1618 1725 50  0000 C CNN
@@ -183,7 +166,7 @@ Wire Wire Line
 Wire Wire Line
 	1900 2500 1900 2050
 $Comp
-L power:GND #PWR0104
+L TPO_Potencia-rescue:GND-power #PWR0104
 U 1 1 5F2DA98F
 P 2550 2150
 F 0 "#PWR0104" H 2550 1900 50  0001 C CNN
@@ -202,18 +185,18 @@ V_DC_Pulsante
 Text Label 8000 3900 0    50   ~ 0
 V_DC_Pulsante
 $Comp
-L Device:R_POT RV1
+L TPO_Potencia-rescue:R_POT-Device RV1
 U 1 1 5F2E9482
 P 4100 5000
 F 0 "RV1" H 4030 4954 50  0000 R CNN
 F 1 "10k" H 4030 5045 50  0000 R CNN
-F 2 "" H 4100 5000 50  0001 C CNN
+F 2 "Potentiometer_THT:Potentiometer_Bourns_3296W_Vertical" H 4100 5000 50  0001 C CNN
 F 3 "~" H 4100 5000 50  0001 C CNN
 	1    4100 5000
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:R R3
+L TPO_Potencia-rescue:R-Device R3
 U 1 1 5F2ED0A0
 P 4500 4750
 F 0 "R3" V 4293 4750 50  0000 C CNN
@@ -226,7 +209,7 @@ $EndComp
 Wire Wire Line
 	4350 4750 4100 4750
 $Comp
-L power:GND #PWR0105
+L TPO_Potencia-rescue:GND-power #PWR0105
 U 1 1 5F2F209E
 P 4100 6000
 F 0 "#PWR0105" H 4100 5750 50  0001 C CNN
@@ -253,30 +236,21 @@ Wire Wire Line
 	4650 4950 4650 5250
 Connection ~ 4100 5250
 $Comp
-L Diode:BA159 D4
+L TPO_Potencia-rescue:BA159-Diode D4
 U 1 1 5F3006C3
-P 6000 3900
-F 0 "D4" H 6000 3683 50  0000 C CNN
-F 1 "BA159" H 6000 3774 50  0000 C CNN
-F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 6000 3725 50  0001 C CNN
-F 3 "http://diotec.com/tl_files/diotec/files/pdf/datasheets/ba157" H 6000 3900 50  0001 C CNN
-	1    6000 3900
+P 5850 3900
+F 0 "D4" H 5850 3683 50  0000 C CNN
+F 1 "BA159" H 5850 3774 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 5850 3725 50  0001 C CNN
+F 3 "http://diotec.com/tl_files/diotec/files/pdf/datasheets/ba157" H 5850 3900 50  0001 C CNN
+	1    5850 3900
 	-1   0    0    1   
 $EndComp
 Connection ~ 6300 4950
 Wire Wire Line
 	6300 4950 7250 4950
-Wire Wire Line
-	5500 4250 5500 3900
-Wire Wire Line
-	5500 3900 5850 3900
-Wire Wire Line
-	6150 3900 6300 3900
-Connection ~ 5500 3900
-Wire Wire Line
-	5500 3900 5500 3700
 $Comp
-L power:VCC #PWR0106
+L TPO_Potencia-rescue:VCC-power #PWR0106
 U 1 1 5F30EA67
 P 5500 3700
 F 0 "#PWR0106" H 5500 3550 50  0001 C CNN
@@ -287,7 +261,7 @@ F 3 "" H 5500 3700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pspice:INDUCTOR L1
+L TPO_Potencia-rescue:INDUCTOR-pspice L1
 U 1 1 5F2D07F3
 P 9750 4800
 F 0 "L1" H 9750 5015 50  0000 C CNN
@@ -298,18 +272,18 @@ F 3 "~" H 9750 4800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pspice:INDUCTOR L2
+L TPO_Potencia-rescue:INDUCTOR-pspice L2
 U 1 1 5F2E5C20
 P 10200 5100
 F 0 "L2" V 10154 5178 50  0000 L CNN
 F 1 "INDUCTOR" V 10245 5178 50  0000 L CNN
-F 2 "TerminalBlock:TerminalBlock_Altech_AK300-3_P5.00mm" H 10200 5100 50  0001 C CNN
+F 2 "TerminalBlock:TerminalBlock_Altech_AK300-2_P5.00mm" H 10200 5100 50  0001 C CNN
 F 3 "~" H 10200 5100 50  0001 C CNN
 	1    10200 5100
 	0    1    1    0   
 $EndComp
 $Comp
-L power:GND #PWR0107
+L TPO_Potencia-rescue:GND-power #PWR0107
 U 1 1 5F2FA9D8
 P 8700 5750
 F 0 "#PWR0107" H 8700 5500 50  0001 C CNN
@@ -333,7 +307,7 @@ Wire Wire Line
 	9250 5150 8700 5150
 Connection ~ 8700 5150
 $Comp
-L Transistor_FET:SSM3K16FU U1
+L TPO_Potencia-rescue:SSM3K16FU-Transistor_FET U1
 U 1 1 5F30E593
 P 2850 5650
 F 0 "U1" H 2954 5696 50  0000 L CNN
@@ -344,7 +318,7 @@ F 3 "" H 2650 6000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0108
+L TPO_Potencia-rescue:GND-power #PWR0108
 U 1 1 5F311219
 P 2850 6000
 F 0 "#PWR0108" H 2850 5750 50  0001 C CNN
@@ -359,7 +333,7 @@ Wire Wire Line
 Wire Wire Line
 	2850 5450 2850 5250
 $Comp
-L Device:R R2
+L TPO_Potencia-rescue:R-Device R2
 U 1 1 5F314A68
 P 2400 5850
 F 0 "R2" H 2550 5800 50  0000 C CNN
@@ -370,7 +344,7 @@ F 3 "~" H 2400 5850 50  0001 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L power:GND #PWR0109
+L TPO_Potencia-rescue:GND-power #PWR0109
 U 1 1 5F31536F
 P 2400 6000
 F 0 "#PWR0109" H 2400 5750 50  0001 C CNN
@@ -385,18 +359,18 @@ Wire Wire Line
 Wire Wire Line
 	2400 5650 2550 5650
 $Comp
-L Switch:SW_DIP_x01 SW1
+L TPO_Potencia-rescue:SW_DIP_x01-Switch SW1
 U 1 1 5F31BB35
 P 2400 5300
 F 0 "SW1" V 2354 5430 50  0000 L CNN
 F 1 "SW_DIP_x01" V 2445 5430 50  0000 L CNN
-F 2 "" H 2400 5300 50  0001 C CNN
+F 2 "Button_Switch_THT:SW_Slide_1P2T_CK_OS102011MS2Q" H 2400 5300 50  0001 C CNN
 F 3 "~" H 2400 5300 50  0001 C CNN
 	1    2400 5300
 	0    1    1    0   
 $EndComp
 $Comp
-L power:VCC #PWR0110
+L TPO_Potencia-rescue:VCC-power #PWR0110
 U 1 1 5F3235B5
 P 2400 5000
 F 0 "#PWR0110" H 2400 4850 50  0001 C CNN
@@ -407,7 +381,7 @@ F 3 "" H 2400 5000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R1
+L TPO_Potencia-rescue:R-Device R1
 U 1 1 5F3268D9
 P 2000 5650
 F 0 "R1" V 1793 5650 50  0000 C CNN
@@ -418,7 +392,7 @@ F 3 "~" H 2000 5650 50  0001 C CNN
 	0    -1   1    0   
 $EndComp
 $Comp
-L Diode:1N47xxA D1
+L TPO_Potencia-rescue:1N47xxA-Diode D1
 U 1 1 5F3290E6
 P 1700 5850
 F 0 "D1" V 1654 5930 50  0000 L CNN
@@ -429,7 +403,7 @@ F 3 "https://www.vishay.com/docs/85816/1n4728a.pdf" H 1700 5850 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:GND #PWR0111
+L TPO_Potencia-rescue:GND-power #PWR0111
 U 1 1 5F329D23
 P 1700 6000
 F 0 "#PWR0111" H 1700 5750 50  0001 C CNN
@@ -487,12 +461,8 @@ Wire Wire Line
 Wire Wire Line
 	8000 3900 8000 4050
 Wire Wire Line
-	7300 5300 7700 5300
-Wire Wire Line
 	7250 4950 8000 4950
 Connection ~ 7250 4950
-Wire Wire Line
-	7250 4550 7700 4550
 Wire Wire Line
 	8000 4050 8700 4050
 Connection ~ 8000 4050
@@ -548,7 +518,7 @@ Wire Wire Line
 Wire Wire Line
 	7300 1950 7500 1950
 $Comp
-L Connector_Generic:Conn_02x03_Odd_Even J5
+L TPO_Potencia-rescue:Conn_02x03_Odd_Even-Connector_Generic J5
 U 1 1 5F479FA2
 P 7000 1850
 F 0 "J5" H 7050 2167 50  0000 C CNN
@@ -559,7 +529,7 @@ F 3 "~" H 7000 1850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:VCC #PWR0112
+L TPO_Potencia-rescue:VCC-power #PWR0112
 U 1 1 5F310CE8
 P 7500 1550
 F 0 "#PWR0112" H 7500 1400 50  0001 C CNN
@@ -570,40 +540,29 @@ F 3 "" H 7500 1550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0113
+L TPO_Potencia-rescue:GND-power #PWR0113
 U 1 1 5F2FD666
-P 5400 1350
-F 0 "#PWR0113" H 5400 1100 50  0001 C CNN
-F 1 "GND" H 5405 1177 50  0000 C CNN
-F 2 "" H 5400 1350 50  0001 C CNN
-F 3 "" H 5400 1350 50  0001 C CNN
-	1    5400 1350
+P 5725 2600
+F 0 "#PWR0113" H 5725 2350 50  0001 C CNN
+F 1 "GND" H 5730 2427 50  0000 C CNN
+F 2 "" H 5725 2600 50  0001 C CNN
+F 3 "" H 5725 2600 50  0001 C CNN
+	1    5725 2600
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Screw_Terminal_01x02 J4
+L TPO_Potencia-rescue:Screw_Terminal_01x02-Connector J4
 U 1 1 5F2FAEB6
-P 5200 1350
-F 0 "J4" H 5400 1050 50  0000 C CNN
-F 1 "Entrada_DC" H 5200 1150 50  0000 C CNN
-F 2 "TerminalBlock:TerminalBlock_Altech_AK300-2_P5.00mm" H 5200 1350 50  0001 C CNN
-F 3 "~" H 5200 1350 50  0001 C CNN
-	1    5200 1350
+P 5525 2600
+F 0 "J4" H 5725 2300 50  0000 C CNN
+F 1 "Entrada_DC" H 5525 2400 50  0000 C CNN
+F 2 "TerminalBlock:TerminalBlock_Altech_AK300-2_P5.00mm" H 5525 2600 50  0001 C CNN
+F 3 "~" H 5525 2600 50  0001 C CNN
+	1    5525 2600
 	-1   0    0    1   
 $EndComp
 $Comp
-L Diode_Bridge:RBV3500 D3
-U 1 1 5F48EB7C
-P 5400 2250
-F 0 "D3" H 4950 2400 50  0000 L CNN
-F 1 "RBV3500" H 4950 2500 50  0000 L CNN
-F 2 "Diode_THT:Diode_Bridge_Round_D9.0mm" H 5250 2800 50  0001 C CNN
-F 3 "" H 5250 2800 50  0001 C CNN
-	1    5400 2250
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C4
+L TPO_Potencia-rescue:C-Device C4
 U 1 1 5F4A1A0C
 P 8700 4450
 F 0 "C4" H 8815 4496 50  0000 L CNN
@@ -614,7 +573,7 @@ F 3 "~" H 8700 4450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C5
+L TPO_Potencia-rescue:C-Device C5
 U 1 1 5F4AACC4
 P 8700 5450
 F 0 "C5" H 8815 5496 50  0000 L CNN
@@ -633,7 +592,7 @@ Wire Wire Line
 Wire Wire Line
 	8700 5150 8700 5300
 $Comp
-L Device:C C6
+L TPO_Potencia-rescue:C-Device C6
 U 1 1 5F4B73ED
 P 9150 4800
 F 0 "C6" V 9400 4800 50  0000 L CNN
@@ -648,12 +607,12 @@ Wire Wire Line
 Wire Wire Line
 	8000 4800 9000 4800
 $Comp
-L Device:C C1
+L TPO_Potencia-rescue:C-Device C1
 U 1 1 5F4C3665
 P 4100 5600
 F 0 "C1" H 4215 5646 50  0000 L CNN
 F 1 "2.2nF" H 4215 5555 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 4138 5450 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4138 5450 50  0001 C CNN
 F 3 "~" H 4100 5600 50  0001 C CNN
 	1    4100 5600
 	1    0    0    -1  
@@ -663,12 +622,12 @@ Wire Wire Line
 Wire Wire Line
 	4100 5750 4100 6000
 $Comp
-L Device:CP C3
+L TPO_Potencia-rescue:CP-Device C3
 U 1 1 5F4CF8BC
 P 6300 4150
 F 0 "C3" H 6418 4196 50  0000 L CNN
-F 1 "100µF" H 6418 4105 50  0000 L CNN
-F 2 "" H 6338 4000 50  0001 C CNN
+F 1 "100µF 16V" H 6418 4105 50  0000 L CNN
+F 2 "Capacitor_THT:C_Radial_D5.0mm_H11.0mm_P2.00mm" H 6338 4000 50  0001 C CNN
 F 3 "~" H 6300 4150 50  0001 C CNN
 	1    6300 4150
 	1    0    0    -1  
@@ -677,69 +636,10 @@ Wire Wire Line
 	6300 4000 6300 3900
 Wire Wire Line
 	6300 4300 6300 4950
-$Comp
-L Device:CP C2
-U 1 1 5F4E100F
-P 6000 2450
-F 0 "C2" H 6118 2496 50  0000 L CNN
-F 1 "2200µF" H 6118 2405 50  0000 L CNN
-F 2 "" H 6038 2300 50  0001 C CNN
-F 3 "~" H 6000 2450 50  0001 C CNN
-	1    6000 2450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5400 1800 5400 1950
-Wire Wire Line
-	5100 2250 5100 2700
-Wire Wire Line
-	5100 2700 6000 2700
-Wire Wire Line
-	6000 2700 6000 2600
-Wire Wire Line
-	5700 2250 6000 2250
-Wire Wire Line
-	6000 2250 6000 2300
-$Comp
-L power:GND #PWR0114
-U 1 1 5F4F74C2
-P 6000 2700
-F 0 "#PWR0114" H 6000 2450 50  0001 C CNN
-F 1 "GND" H 6005 2527 50  0000 C CNN
-F 2 "" H 6000 2700 50  0001 C CNN
-F 3 "" H 6000 2700 50  0001 C CNN
-	1    6000 2700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6000 2250 6500 2250
-Wire Wire Line
-	6500 2250 6500 1950
 Wire Wire Line
 	6500 1950 6800 1950
-Connection ~ 6000 2250
-Wire Wire Line
-	5400 1250 6500 1250
-Wire Wire Line
-	6500 1250 6500 1750
-Wire Wire Line
-	6500 1750 6800 1750
 Wire Notes Line
-	4750 3150 6400 3150
-Wire Notes Line
-	6400 3150 6400 1700
-Wire Notes Line
-	6400 1700 4750 1700
-Wire Notes Line
-	4750 1700 4750 3150
-Wire Notes Line
-	4750 1650 5700 1650
-Wire Notes Line
-	5700 1650 5700 1000
-Wire Notes Line
-	5700 1000 4750 1000
-Wire Notes Line
-	4750 1000 4750 1650
+	6025 2250 5075 2250
 Wire Notes Line
 	6600 1200 7800 1200
 Wire Notes Line
@@ -749,15 +649,15 @@ Wire Notes Line
 Wire Notes Line
 	6600 2300 6600 1200
 $Comp
-L Connector:Screw_Terminal_01x02 J2
+L TPO_Potencia-rescue:Screw_Terminal_01x02-Connector J2
 U 1 1 5F5182C8
-P 1750 3700
-F 0 "J2" H 1800 3800 50  0000 C CNN
-F 1 "Entrada 220V Trafo" H 1550 3900 50  0000 C CNN
-F 2 "TerminalBlock:TerminalBlock_Altech_AK300-2_P5.00mm" H 1750 3700 50  0001 C CNN
-F 3 "~" H 1750 3700 50  0001 C CNN
-	1    1750 3700
-	-1   0    0    1   
+P 1750 3600
+F 0 "J2" H 1800 3700 50  0000 C CNN
+F 1 "Entrada 220V Trafo" H 1550 3800 50  0000 C CNN
+F 2 "TerminalBlock:TerminalBlock_Altech_AK300-2_P5.00mm" H 1750 3600 50  0001 C CNN
+F 3 "~" H 1750 3600 50  0001 C CNN
+	1    1750 3600
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
 	1950 3600 2150 3600
@@ -774,7 +674,7 @@ Connection ~ 2350 2500
 Wire Wire Line
 	2350 2500 1900 2500
 $Comp
-L Connector:Screw_Terminal_01x02 J3
+L TPO_Potencia-rescue:Screw_Terminal_01x02-Connector J3
 U 1 1 5F5345E0
 P 2900 3700
 F 0 "J3" H 2950 3800 50  0000 C CNN
@@ -788,12 +688,6 @@ Text Label 3100 3600 0    50   ~ 10
 V1_alt_12V
 Text Label 3100 3700 0    50   ~ 10
 V2_alt_12V
-Text Label 5400 1800 0    50   ~ 10
-V1_alt_12V
-Text Label 5400 2850 0    50   ~ 10
-V2_alt_12V
-Wire Wire Line
-	5400 2550 5400 2850
 Wire Notes Line
 	1300 4050 3900 4050
 Wire Notes Line
@@ -804,13 +698,126 @@ Wire Notes Line
 	1300 3200 1300 4050
 Text Notes 1350 3450 0    50   ~ 10
 Connectores Trafo 220v  → 12v\n\n\n       Entrada 220V                  Salida 12V alt\n
-Text Notes 5000 3150 0    50   ~ 10
-Rectificador de ~~15/16V DC\n\n
-Text Notes 4800 1650 0    50   ~ 10
-Entrada externa de DC\n
 Text Notes 6650 1200 0    50   ~ 10
 Selector de alimentación DC\n
-Connection ~ 6000 2700
 Wire Notes Line
 	1300 4600 3450 4600
+Wire Wire Line
+	5500 3700 5500 3900
+Wire Wire Line
+	5700 3900 5500 3900
+Connection ~ 5500 3900
+Wire Wire Line
+	5500 3900 5500 4250
+Wire Wire Line
+	6000 3900 6100 3900
+Wire Wire Line
+	6100 3900 6100 4450
+Wire Wire Line
+	5800 4450 6100 4450
+Connection ~ 6100 3900
+Wire Wire Line
+	6100 3900 6300 3900
+Wire Wire Line
+	7000 4550 7250 4550
+Connection ~ 7250 4550
+Wire Wire Line
+	7250 4550 7700 4550
+Wire Wire Line
+	7000 5300 7300 5300
+Connection ~ 7300 5300
+Wire Wire Line
+	7300 5300 7700 5300
+Text Notes 5125 2900 0    50   ~ 10
+Entrada externa de DC\n
+Text Notes 4625 2175 0    50   ~ 10
+Rectificador de ~~15/16V DC\n\n
+Wire Wire Line
+	5025 1575 5025 1875
+Text Label 5025 1875 0    50   ~ 10
+V2_alt_12V
+Text Label 5025 825  0    50   ~ 10
+V1_alt_12V
+Wire Notes Line
+	5075 2250 5075 2900
+Wire Notes Line
+	6025 2900 6025 2250
+Wire Notes Line
+	5075 2900 6025 2900
+Wire Notes Line
+	4375 725  4375 2175
+Wire Notes Line
+	6025 725  4375 725 
+Wire Notes Line
+	6025 2175 6025 725 
+Wire Notes Line
+	4375 2175 6025 2175
+$Comp
+L TPO_Potencia-rescue:GND-power #PWR0114
+U 1 1 5F4F74C2
+P 5625 1725
+F 0 "#PWR0114" H 5625 1475 50  0001 C CNN
+F 1 "GND" H 5630 1552 50  0000 C CNN
+F 2 "" H 5625 1725 50  0001 C CNN
+F 3 "" H 5625 1725 50  0001 C CNN
+	1    5625 1725
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5625 1275 5625 1325
+Wire Wire Line
+	5625 1725 5625 1625
+Wire Wire Line
+	4725 1725 5625 1725
+Wire Wire Line
+	4725 1275 4725 1725
+Wire Wire Line
+	5025 825  5025 975 
+$Comp
+L TPO_Potencia-rescue:CP-Device C2
+U 1 1 5F4E100F
+P 5625 1475
+F 0 "C2" H 5743 1521 50  0000 L CNN
+F 1 "2200µF 25V/35V" H 5743 1430 50  0000 L CNN
+F 2 "Capacitor_THT:C_Radial_D16.0mm_H25.0mm_P7.50mm" H 5663 1325 50  0001 C CNN
+F 3 "~" H 5625 1475 50  0001 C CNN
+	1    5625 1475
+	1    0    0    -1  
+$EndComp
+Connection ~ 5625 1725
+Wire Wire Line
+	5325 1275 5625 1275
+Connection ~ 5625 1275
+Wire Wire Line
+	5625 1275 6475 1275
+Wire Wire Line
+	5725 2500 6500 2500
+Wire Wire Line
+	6475 1275 6475 1750
+Wire Wire Line
+	6475 1750 6800 1750
+Wire Wire Line
+	6500 1950 6500 2500
+$Comp
+L TPO_Potencia-rescue:RBV3500-Diode_Bridge D2
+U 1 1 5F2B72ED
+P 2950 2000
+F 0 "D2" H 2500 2150 50  0000 L CNN
+F 1 "RBV3500" H 2500 2250 50  0000 L CNN
+F 2 "Diode_THT:RBV25" H 2800 2550 50  0001 C CNN
+F 3 "" H 2800 2550 50  0001 C CNN
+	1    2950 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L TPO_Potencia-rescue:W02M U5
+U 1 1 5F60255D
+P 5025 1275
+F 0 "U5" H 4681 1229 50  0000 R CNN
+F 1 "DB153" H 4681 1320 50  0000 R CNN
+F 2 "Diode_THT:Diode_Bridge_DIP-4_W7.62mm_P5.08mm" H 5025 1275 50  0001 C CNN
+F 3 "" H 5025 1275 50  0001 C CNN
+	1    5025 1275
+	1    0    0    1   
+$EndComp
 $EndSCHEMATC

@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name TPO_Potencia-rescue)(type Legacy)(uri ${KIPRJMOD}/TPO_Potencia-rescue.lib)(options "")(descr ""))
+)
